@@ -1,6 +1,9 @@
 
  Po stworzeniu lokalnego repozytorium Git uruchamiamy konsole Git na folderze i możemy wykonać działania na lokalnym repo
 
-/ git status / -> sprawdza stan plików na branchu (domyślnie master)
+Modified (zmodyfikowany) -> Staged (śledzony) -> Commited (zatwierdzony)
+
+/ git status / -> sprawdza stan plików na branchu (domyślnie master) -> zaleca się często używać
 / git add <plik> / -> dodaj do przechowalni plik
 / git add . / -> dodaj wszystkie pliki do przechowalni
+/ git commit -m "Plik spisu komend dodalem" / -> zapisanie zmian do lokalnego repozytorium
