@@ -29,3 +29,20 @@ aby cofnąć zmiany w pliku korzystamy z operacji git checkout/restore
 [3] Przywracanie zmian:
 
 / git log --oneline / -> pokazuje w formie logu ostatnie committy
+
+/ git checkout <id committu <0bb653f1>> / -> cofnięcie do tego commitu
+/ git checkout -b <new branch name> / -> zmiany cofniętego committa można je wrzucić na nowy branch
+/ git checkout master / -> powrót do bieżącej wersji projektu
+/ git revert <id commituc<0bb653f1>>/ -> cofa zmiany w danym commicie i zapisuje je w nowym, nie zmienia historii commitów
+/ git reset / -> tylko commity które nie zostały jeszcze opublikowane w repo publicznym, ingeruje w historię commitów,
+usuwa commit z historii
+
+[4] Przeglądanie historii
+
+/ git log / -> cała historia git
+/ git log --help / -> wszystkie opcje git log
+/ git log --oneline / -> zwięzły log w postaci listy
+/ git log --author="Konrad" / -> commity konkretnej osoby
+/ git log --grep="Koniec" / -> commity zawierające daną fraze w komentarzu
+/ git log --oneline -3 / -> trzy ostatnie commity
+/ git log --oneline -- <nazwa pliku> / -> commity które zmieniały wskazany plik
