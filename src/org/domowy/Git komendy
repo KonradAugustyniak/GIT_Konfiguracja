@@ -46,3 +46,4 @@ usuwa commit z historii
 / git log --grep="Koniec" / -> commity zawierające daną fraze w komentarzu
 / git log --oneline -3 / -> trzy ostatnie commity
 / git log --oneline -- <nazwa pliku> / -> commity które zmieniały wskazany plik
+/ git shortlog / -> lista commitów per użytkownik
