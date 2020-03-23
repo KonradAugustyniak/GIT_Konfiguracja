@@ -1,5 +1,5 @@
 
- Po stworzeniu lokalnego repozytorium Git uruchamiamy konsole Git na folderze i możemy wykonać działania na lokalnym repo
+[1] Po stworzeniu lokalnego repozytorium Git uruchamiamy konsole Git na folderze i możemy wykonać działania na lokalnym repo
 
 Modified (zmodyfikowany) -> Staged (śledzony) -> Committed (zatwierdzony)
 
@@ -9,7 +9,7 @@ Modified (zmodyfikowany) -> Staged (śledzony) -> Committed (zatwierdzony)
 / git commit -m "Plik spisu komend dodalem" / -> zapisanie zmian do lokalnego repozytorium
 
 
-Czynności przed Commit:
+[2] Czynności przed Commit:
 
 / git clean / -> usuwa pliki które nie zostały jeszcze dodane na stage (add)
 / git clean -n / -> jakie pliki dokładnie zostaną usnięte
@@ -24,3 +24,8 @@ Czynności przed Commit:
 aby cofnąć zmiany w pliku korzystamy z operacji git checkout/restore
 
 / git rm / -> usuniecie plików z repo -> w drugim ruchu git commit -m "" celem faktycznego usuniecia z repo
+
+
+[3] Przywracanie zmian:
+
+/ git log --oneline / -> pokazuje w formie logu ostatnie committy
