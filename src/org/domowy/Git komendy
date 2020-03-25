@@ -58,3 +58,38 @@ usuwa commit z historii
  - tryb rozkazujący w tytule
  - długość wiersza treści do 72 znaków
  - treść komentarza : co? i dlaczego?
+
+W Intellij łatwiej -> od razu można dodać kilka linii opisu
+
+[6] Git Stash
+
+/ git branch / -> sprawdza ile i jakie branche sa, * pokazuje obecnie używany
+/ git checkout <nazwa branch> / -> przełączenie między branchami
+
+Jeśli mamy nie zapisane zmiany w pliku to nie można przełączyć się miedzy branchami - wiazalo by sie to z nadpisaniem
+zmian wtedy należy albo zrobic commit albo:
+
+- / git stash /  -> dodanie zmian niezapisanych na 'stos' = zmiany z katalogu roboczego zostaly 'odlozone' na bok
+- / git checkout <nazwa branch> / -> przelaczenie na drugi branch
+- / git stash pop / -> przywrócenie zmian odlozonych na 'stos'
+
+/ git stash push -m"dodaj komentarz" / -> niezapisane zmiany odkladamy na 'stos' wraz z komenatrzem
+/ git stash list / -> lista aktualnie dodanych zmian na 'stosie'
+/ git stash push -m"dodaj komentarz" -u / -> dodanie na 'stos' zmian które nie sa jeszcze śledzone przez git
+np. nowy plik
+/ git stash apply <id ze stosu> / -> zmiany ze 'stosu' mozna przwracać tym poleceniem, w tym przypadku przywrócone zostaja do
+katalogu roboczego i zostają na 'stosie'
+
+/ git stash pop <id ze stosu> / -> zmiany ze 'stosu' mozna przwracać tym poleceniem, w tym przypadku przywrócone zostaja do
+                                   katalogu roboczego i usuniete ze 'stosie'
+
+/ git stash drop <id ze stosu> / -> usuniecie zmian ze stosu wybranej zmiany (stash)
+/ git stash clear / -> wyczyszczenie calego stosu
+
+Jeśli mam niezapisane zmiany w plikach mogę je najpierw odłozyć na bok na 'stos' i zakładajac nowy branch odrazu je
+dodać do niego
+
+niezpisane zmiany dodaje na 'stos' -> /git stash /
+/ git stash branch <nazwa brancha nowego> / -> wrzucenie zmian ze 'stosu' odrazu na nowy branch
+
+
