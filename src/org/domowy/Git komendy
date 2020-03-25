@@ -97,3 +97,8 @@ niezpisane zmiany dodaje na 'stos' -> /git stash /
 / git branch <nazwa nowego brancha> / -> tworzy nowy branch
 / git branch / -> wyswietla liste branchy
 / git checkout <nazwa brancha> / -> przelaczenie sie na inny branch
+
+po przelaczeniu wprowadzamy zmiany i rozwijamy projekt -> standardowo po zmianach w plikach:
+
+git add . -> git commit -m "" -> git push
+
