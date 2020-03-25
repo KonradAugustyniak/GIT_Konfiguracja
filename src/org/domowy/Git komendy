@@ -102,3 +102,18 @@ po przelaczeniu wprowadzamy zmiany i rozwijamy projekt -> standardowo po zmianac
 
 git add . -> git commit -m "" -> git push
 
+/ git merge <nazwa brancha który chcemy polaczyc> / czyli jesli develop chce polaczyc z masterem należy upewnic sie
+że jestem na branch 'master' i wskazuje git merge develop
+
+Po polaczeniu branchy niepotrzebny mozna juz usunac:
+/ git branch -D develop / -> usuwanie brancha 'develop'
+
+Dobre praktyki:
+
+Podzial na 5 glownych branchy:
+- Master -> produkcyjny
+- Dev -> śr developerskie polaczone ze śr testowym
+- Faeature branch -> praca nad nowa funkcja
+- User branch indywidualna praca usera -> zmiany trafiaja na feature branch
+- Test / Bug -> szybkie poprawki i fixy
+
