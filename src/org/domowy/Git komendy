@@ -92,4 +92,8 @@ dodać do niego
 niezpisane zmiany dodaje na 'stos' -> /git stash /
 / git stash branch <nazwa brancha nowego> / -> wrzucenie zmian ze 'stosu' odrazu na nowy branch
 
+[7] Branch
 
+/ git branch <nazwa nowego brancha> / -> tworzy nowy branch
+/ git branch / -> wyswietla liste branchy
+/ git checkout <nazwa brancha> / -> przelaczenie sie na inny branch
