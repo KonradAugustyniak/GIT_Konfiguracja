@@ -161,4 +161,8 @@ Po wszystkim mozna posprzatac branche:
  - usuniecie pliku z jednego brancha przed merge
  - rozwizywanie konfliktow przy pull request
 
+ [10] Rebase -> merge bez commita informujacego o nim
+
+
+
 
