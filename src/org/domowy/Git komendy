@@ -3,6 +3,8 @@
 
 Modified (zmodyfikowany) -> Staged (śledzony) -> Committed (zatwierdzony)
 
+/git init / -> utworzenie repo lokalne
+
 / git status / -> sprawdza stan plików na branchu (domyślnie master) -> zaleca się często używać
 / git add <plik> / -> dodaj do przechowalni plik (dodanie na stage inaczej)
 / git add . / -> dodaj wszystkie pliki do przechowalni (dodanie na stage inaczej)
@@ -116,4 +118,43 @@ Podzial na 5 glownych branchy:
 - Faeature branch -> praca nad nowa funkcja
 - User branch indywidualna praca usera -> zmiany trafiaja na feature branch
 - Test / Bug -> szybkie poprawki i fixy
+
+[8] Zdalne repozytorium i fork -> remote repo
+
+/ git push / -> wysłanie zmian z lokalnego repo do zdalnego (gitlab)
+/ git fetch / -> pobranie zmian ze zdalnego repo do lokalnego -> wykonywać przed rozpoczęciem pracy aby lokalne było aktualne
+/ git merge origin/<nazwa brancha> / -> jeśli ze zdalnego repo ściągnięto zmiany do repo lokalnego (origin/master)
+trzeba tym poleceniem odświeżyć lokalnego 'master'
+
+/ git remote add origin <adres zdalnego repo - skopiowany z gitlab> / -> podłaczenie origin/master do master
+
+/ git push -u (--set upstream) origin master / -> to tylko za pierwszym razemc celem powiazania repo zdalnego z lokalnym
+i wymiany pierwszych zmian miedzy nimi. Potem wystarczy juz git push
+
+# Gdy na zdalnym repo pojawia sie nowe zmiany wczytane przez innego usera:
+
+/ git fetch / -> zaciagniecie zmian ze zdalnego repo do lokalnego
+/ git merge origin/master / -> lokalny master zostal odswiezony zadalnym origin/master
+
+# Jesli nie mamy uprawnien do wywylania zmian do zdalnego repo to mozna wykorzystac fork
+
+Fork - > Jest to obraz mastera zdalnego na ktory mozna wywsylac zmiany z lokalnego repo a potem za pomoca pull request proponowac
+wgranie ich na mastera zdalnego
+
+/ pull request / -> wyslanie z brancha / forka żadania zmigrowania zmian na mastera
+
+Jeśli zmiany zostana zaakceptowane wlasciciel repo zdalnego / galezi master wykonuje merge -> wrzuca zmiany z
+forka / brancha roboczego na master
+
+Po wszystkim mozna posprzatac branche:
+
+/ git branch -D develop / -> usuwanie brancha 'develop' -> usuniecie lokalnego brancha
+/ gir push origin --delete develop / -> usuwania brancha zdalnego develop
+
+/ git remote / -> sprawdzenie listy branchy zdalnych
+/ git fetch <nazwa branch> / -> odświezenie lokalnego brancha wskazanym z listy repo zdalnym
+/ git pull / -> ścągnij dane z repo zdalnego do lokalnego
+
+[9] Rozwiazywanie konfliktów
+
 
