@@ -161,7 +161,15 @@ Po wszystkim mozna posprzatac branche:
  - usuniecie pliku z jednego brancha przed merge
  - rozwizywanie konfliktow przy pull request
 
- [10] Rebase -> merge bez commita informujacego o nim
+ [10] Rebase -> wykonujemy przed polaczeniem zmian -> nalezy wykonywac ostrożnie bo zmienia historie repo zdalnego
+
+ / git merge <nazwa brancha> / -> polaczenie zmian na dwoch branchach
+
+ Powyzsze powoduje dodanie komentarza dla commitu informujacego o polaczeniu branchy (zmian)
+
+ przed merge: / git rebase master (jeśli robię rebase develop) / -> przelczam sie na drugi barnch ->
+/ git merge develop / -> dzieki temu nie zostal utworzony zaden dodatkowy commit reprezentujacy operacje merge
+
 
 
 
