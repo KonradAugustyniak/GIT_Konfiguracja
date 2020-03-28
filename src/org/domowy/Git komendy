@@ -157,4 +157,8 @@ Po wszystkim mozna posprzatac branche:
 
 [9] Rozwiazywanie konfliktów
 
+ - zmiany w pliku przed merge branchy
+ - usuniecie pliku z jednego brancha przed merge
+ - rozwizywanie konfliktow przy pull request
+
 
